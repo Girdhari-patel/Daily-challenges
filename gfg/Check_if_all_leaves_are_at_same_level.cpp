@@ -32,7 +32,10 @@ Your Task:
 Implement the function check() that checks whether all the leaf nodes in the given binary tree are at the same level or not. The function takes the root node of the tree as an input and should return a boolean value (true/false) based on the condition.
 
 Constraints:
-1 ≤ n ≤ 105*/
+1 ≤ n ≤ 105
+/// ise aur optimise krne ki jarurat h
+
+*/
 class Solution{
   public:
     /*You are required to complete this method*/
