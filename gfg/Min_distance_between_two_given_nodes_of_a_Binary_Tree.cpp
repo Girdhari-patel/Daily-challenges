@@ -38,6 +38,7 @@ Constraints:
 0 <= Data of a node <= 109
 
 */
+/*
 struct Node
 {
     int data;
