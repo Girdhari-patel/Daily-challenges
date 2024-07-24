@@ -2,7 +2,7 @@
 
 Return the sorted array.
 
- 
+
 
 Example 1:
 
@@ -18,27 +18,30 @@ Example 3:
 
 Input: nums = [-1,1,-6,4,5,-6,1,4,1]
 Output: [5,-1,4,4,-6,-6,1,1,1]
- 
+
 
 Constraints:
 
 1 <= nums.length <= 100
 -100 <= nums[i] <= 100*/
 
-class Solution {
+class Solution
+{
 public:
-    vector<int> frequencySort(vector<int>& nums) {
-        unordered_map<int, int>freq;
-        for(int num:nums){
+    vector<int> frequencySort(vector<int> &nums)
+    {
+        unordered_map<int, int> freq;
+        for (int num : nums)
+        {
             freq[num]++;
         }
 
-        sort(nums.begin(), nums.end(), [&](int a, int b) {
+        sort(nums.begin(), nums.end(), [&](int a, int b)
+             {
             if (freq[a] == freq[b]) {
             return a > b; 
             }
-        return freq[a] < freq[b];
-        });
+        return freq[a] < freq[b]; });
         return nums;
     }
 };
